@@ -1,0 +1,12 @@
+%{
+  "bunt": {:hex, :bunt, "0.2.0", "951c6e801e8b1d2cbe58ebbd3e616a869061ddadcc4863d0a2182541acae9a38", [:mix], [], "hexpm"},
+  "credo": {:hex, :credo, "0.10.2", "03ad3a1eff79a16664ed42fc2975b5e5d0ce243d69318060c626c34720a49512", [:mix], [{:bunt, "~> 0.2.0", [hex: :bunt, repo: "hexpm", optional: false]}, {:jason, "~> 1.0", [hex: :jason, repo: "hexpm", optional: false]}], "hexpm"},
+  "delta_crdt": {:hex, :delta_crdt, "0.1.11", "03fd295c030fee540f26414ebb38783b243b20c525436d3d6e40dfbf091e9b96", [:mix], [], "hexpm"},
+  "ex_unit_clustered_case": {:hex, :ex_unit_clustered_case, "0.3.2", "e4acd0e46c5d6f057d71a1798a1674d333309eb247bbd753af4c5dbe52971b1e", [:mix], [], "hexpm"},
+  "horde": {:hex, :horde, "0.2.3", "d334c7c26b968e793fb737128bea669e95a99653dc1da4ea0bffcfe3dfa6d2cf", [:mix], [{:delta_crdt, "== 0.1.11", [hex: :delta_crdt, repo: "hexpm", optional: false]}, {:xxhash, "~> 0.1", [hex: :xxhash, repo: "hexpm", optional: false]}], "hexpm"},
+  "jason": {:hex, :jason, "1.1.2", "b03dedea67a99223a2eaf9f1264ce37154564de899fd3d8b9a21b1a6fd64afe7", [:mix], [{:decimal, "~> 1.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm"},
+  "meck": {:hex, :meck, "0.8.12", "1f7b1a9f5d12c511848fec26bbefd09a21e1432eadb8982d9a8aceb9891a3cf2", [:rebar3], [], "hexpm"},
+  "patiently": {:hex, :patiently, "0.2.0", "67eb139591e10c4b363ae0198e832552f191c58894731efd3bf124ec4722267a", [:mix], [], "hexpm"},
+  "placebo": {:hex, :placebo, "1.1.0", "b75fb4b1912910d436d625382fa4c3c1572e5862f9ba0d91d7192420654e9866", [:mix], [{:meck, "~> 0.8.9", [hex: :meck, repo: "hexpm", optional: false]}], "hexpm"},
+  "xxhash": {:hex, :xxhash, "0.2.1", "ab0893a8124f3c11116c57e500485dc5f67817d1d4c44f0fff41f3fd3c590607", [:mix], [], "hexpm"},
+}

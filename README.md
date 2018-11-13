@@ -1,6 +1,6 @@
 # HordeConnector
 
-**TODO: Add description**
+Library that will auto connect any configured hordes to connected BEAM nodes.
 
 ## Installation
 
@@ -10,7 +10,7 @@ by adding `horde_connector` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:horde_connector, "~> 0.1.0"}
+    {:horde_connector, github: "SmartColumbusOS/horde_connector", tag: "1.0.0"}
   ]
 end
 ```

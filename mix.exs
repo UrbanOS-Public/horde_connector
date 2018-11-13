@@ -22,6 +22,7 @@ defmodule HordeConnector.MixProject do
   defp deps do
     [
       {:horde, "~> 0.2.3"},
+      {:placebo, "~> 1.1", only: [:dev, :test]},
       {:patiently, "~> 0.2.0", only: :test},
       {:ex_unit_clustered_case, "~> 0.3.2", only: :test, runtime: false},
       {:credo, "~> 0.10", only: [:dev, :test], runtime: false}

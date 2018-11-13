@@ -7,6 +7,6 @@
   "jason": {:hex, :jason, "1.1.2", "b03dedea67a99223a2eaf9f1264ce37154564de899fd3d8b9a21b1a6fd64afe7", [:mix], [{:decimal, "~> 1.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm"},
   "meck": {:hex, :meck, "0.8.12", "1f7b1a9f5d12c511848fec26bbefd09a21e1432eadb8982d9a8aceb9891a3cf2", [:rebar3], [], "hexpm"},
   "patiently": {:hex, :patiently, "0.2.0", "67eb139591e10c4b363ae0198e832552f191c58894731efd3bf124ec4722267a", [:mix], [], "hexpm"},
-  "placebo": {:hex, :placebo, "1.1.0", "b75fb4b1912910d436d625382fa4c3c1572e5862f9ba0d91d7192420654e9866", [:mix], [{:meck, "~> 0.8.9", [hex: :meck, repo: "hexpm", optional: false]}], "hexpm"},
+  "placebo": {:hex, :placebo, "1.1.2", "4804191a8c1e5b3f3f381ea5c4e56a2cc79035236ff1a0b095b70fe78ea7a6ec", [:mix], [{:meck, "~> 0.8.9", [hex: :meck, repo: "hexpm", optional: false]}], "hexpm"},
   "xxhash": {:hex, :xxhash, "0.2.1", "ab0893a8124f3c11116c57e500485dc5f67817d1d4c44f0fff41f3fd3c590607", [:mix], [], "hexpm"},
 }

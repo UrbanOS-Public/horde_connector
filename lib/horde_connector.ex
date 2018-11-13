@@ -50,7 +50,7 @@ defmodule HordeConnector do
   end
 
   def handle_info(unknown_message, state) do
-    Logger.info("Unknown message received: #{inspect(unknown_message)}")
+    Logger.warn("Unknown message received: #{inspect(unknown_message)}")
     {:noreply, state}
   end
 
@@ -62,10 +62,13 @@ defmodule HordeConnector do
   defp name(nil), do: __MODULE__
   defp name(registry), do: {:via, Horde.Registry, {registry, __MODULE__}}
 
+  defp args(supervisor, nil), do: [supervisor]
+  defp args(supervisor, registry), do: [supervisor, registry]
+
   defp connector_child_spec(supervisor, registry) do
     %{
       id: __MODULE__,
-      start: {__MODULE__, :start_link, [[supervisor, registry], [name: name(registry)]]}
+      start: {__MODULE__, :start_link, [args(supervisor, registry), [name: name(registry)]]}
     }
   end
 end

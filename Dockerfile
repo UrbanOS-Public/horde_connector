@@ -5,5 +5,7 @@ WORKDIR /app
 RUN mix local.hex --force && \
   mix local.rebar --force && \
   mix deps.get && \
-  elixir --name a@127.0.0.1 -S mix test && \
-  mix credo
+  mix format --check-formatted && \
+  mix credo && \
+  elixir --name a@127.0.0.1 -S mix test
+  

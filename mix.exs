@@ -8,6 +8,7 @@ defmodule HordeConnector.MixProject do
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+      docs: docs(),
       description: description(),
       aliases: aliases(),
       package: package(),
@@ -35,6 +36,16 @@ defmodule HordeConnector.MixProject do
 
   defp description() do
     "Automatically connects configured hordes on nodeup events"
+  end
+
+  defp docs do
+    [
+      main: "README",
+      source_url: "https://github.com/SmartColumbusOS/horde_connector",
+      extras: [
+        "README.md"
+      ]
+    ]
   end
 
   defp aliases() do

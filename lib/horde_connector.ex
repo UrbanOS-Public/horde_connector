@@ -1,8 +1,6 @@
 defmodule HordeConnector do
-  @moduledoc """
-  Module that automatically connects all nodes to configured
-  hordes.
-  """
+  @moduledoc File.read!("README.md")
+
   use GenServer
   require Logger
 

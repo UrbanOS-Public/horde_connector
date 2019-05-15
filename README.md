@@ -4,7 +4,7 @@
 # HordeConnector
 
 This library must be used in conjunction with [Horde](https://github.com/derekkraan/horde).
-Horde by itself works in a well defined enviornment where all instances are known at startup.
+Horde by itself works in a well defined environment where all instances are known at startup.
 HordeConnector allows new BEAM nodes to be added to the Horde dynamically at runtime.
 Your application will still be responsible for linking nodes (we suggest using [libcluster](https://hexdocs.pm/libcluster/readme.html)).
 Once linked, HordeConnector will automatically join nodes to Horde upon connection.
@@ -36,7 +36,7 @@ def start(_type, _args) do
     {HordeConnector, [supervisor: MyApp.Horde.Supervisor, registry: MyApp.Registry]}
    ]
 
-    # ....
+   # ....
 
    Supervisor.start_link(children, opts)
 end
@@ -45,4 +45,4 @@ end
 And that's it! Once HordeConnector is started, any time `Node.connect/1` is called the new node will be added to the Horde cluster.
 
 ## License
-Released under [Apache 2 license](https://github.com/SmartColumbusOS/horde_connector/blob/master/LICENSE).
+Released under [Apache 2 license](https://github.com/smartcitiesdata/horde_connector/blob/master/LICENSE).

@@ -12,7 +12,7 @@ defmodule HordeConnector.MixProject do
       description: description(),
       aliases: aliases(),
       package: package(),
-      source_url: "https://github.com/SmartColumbusOS/horde_connector",
+      source_url: "https://github.com/smartcitiesdata/horde_connector",
       elixirc_paths: elixirc_paths(Mix.env())
     ]
   end

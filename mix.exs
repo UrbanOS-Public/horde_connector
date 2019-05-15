@@ -4,7 +4,7 @@ defmodule HordeConnector.MixProject do
   def project do
     [
       app: :horde_connector,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -12,7 +12,7 @@ defmodule HordeConnector.MixProject do
       description: description(),
       aliases: aliases(),
       package: package(),
-      source_url: "https://github.com/SmartColumbusOS/horde_connector",
+      source_url: "https://github.com/smartcitiesdata/horde_connector",
       elixirc_paths: elixirc_paths(Mix.env())
     ]
   end
@@ -40,8 +40,8 @@ defmodule HordeConnector.MixProject do
 
   defp docs do
     [
-      main: "README",
-      source_url: "https://github.com/SmartColumbusOS/horde_connector",
+      main: "readme",
+      source_url: "https://github.com/smartcitiesdata/horde_connector",
       extras: [
         "README.md"
       ]
@@ -56,9 +56,9 @@ defmodule HordeConnector.MixProject do
 
   defp package() do
     [
-      organization: "smartcolumbus_os",
-      licenses: ["AllRightsReserved"],
-      links: %{"GitHub" => "https://github.com/SmartColumbusOS/horde_connector"}
+      maintainers: ["smartcitiesdata"],
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/smartcitiesdata/horde_connector"}
     ]
   end
 

@@ -4,7 +4,7 @@ defmodule HordeConnector.MixProject do
   def project do
     [
       app: :horde_connector,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -40,7 +40,7 @@ defmodule HordeConnector.MixProject do
 
   defp docs do
     [
-      main: "README",
+      main: "readme",
       source_url: "https://github.com/smartcitiesdata/horde_connector",
       extras: [
         "README.md"

@@ -16,7 +16,7 @@ This package can be installed by adding `horde_connector` to your list of depend
 ```elixir
 def deps() do
   [
-    {:horde_connector, "~> 1.0.0"}
+    {:horde_connector, "~> 0.1.1"}
   ]
 end
 ```

@@ -41,7 +41,7 @@ defmodule HordeConnector.MixProject do
   defp docs do
     [
       main: "README",
-      source_url: "https://github.com/SmartColumbusOS/horde_connector",
+      source_url: "https://github.com/smartcitiesdata/horde_connector",
       extras: [
         "README.md"
       ]
@@ -56,9 +56,9 @@ defmodule HordeConnector.MixProject do
 
   defp package() do
     [
-      organization: "smartcolumbus_os",
-      licenses: ["AllRightsReserved"],
-      links: %{"GitHub" => "https://github.com/SmartColumbusOS/horde_connector"}
+      maintainers: ["smartcitiesdata"],
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/smartcitiesdata/horde_connector"}
     ]
   end
 

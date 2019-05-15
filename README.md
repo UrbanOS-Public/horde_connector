@@ -1,3 +1,6 @@
+[![Master](https://travis-ci.org/smartcitiesdata/horde_connector.svg?branch=master)](https://travis-ci.org/smartcitiesdata/horde_connector)
+[![Hex.pm Version](http://img.shields.io/hexpm/v/horde_connector.svg?style=flat)](https://hex.pm/packages/horde_connector)
+
 # HordeConnector
 
 This library must be used in conjunction with [Horde](https://github.com/derekkraan/horde).

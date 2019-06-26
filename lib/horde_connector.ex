@@ -53,7 +53,7 @@ defmodule HordeConnector do
   end
 
   defp join_horde(horde, node) do
-    Horde.Cluster.join_hordes(horde, {horde, node})
+    Horde.Cluster.set_members(horde, {horde, node})
     Logger.info("Node #{node} joining horde #{horde}")
   end
 

@@ -4,12 +4,12 @@ defmodule HordeConnectorTest do
 
   describe "HordeConnector" do
     test "will join the configured hordes when receiving a nodeup message" do
-      allow Horde.Cluster.join_hordes(term(), term()), return: :ok
+      allow Horde.Cluster.set_members(term(), term()), return: :ok
 
       HordeConnector.handle_info({:nodeup, :nodeX10, []}, [H.Sup, H.Reg])
 
-      assert_called Horde.Cluster.join_hordes(H.Sup, {H.Sup, :nodeX10})
-      assert_called Horde.Cluster.join_hordes(H.Reg, {H.Reg, :nodeX10})
+      assert_called Horde.Cluster.set_members(H.Sup, {H.Sup, :nodeX10})
+      assert_called Horde.Cluster.set_members(H.Reg, {H.Reg, :nodeX10})
     end
 
     test "child_spec will start task that starts HordeConnector" do

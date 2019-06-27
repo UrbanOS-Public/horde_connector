@@ -4,7 +4,7 @@ defmodule HordeConnector.MixProject do
   def project do
     [
       app: :horde_connector,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -25,12 +25,13 @@ defmodule HordeConnector.MixProject do
 
   defp deps do
     [
-      {:horde, "~> 0.6.0"},
+      {:horde, "~> 0.6"},
       {:placebo, "~> 1.2", only: [:dev, :test]},
       {:patiently, "~> 0.2", only: :test},
-      {:ex_doc, "~> 0.19", only: [:dev, :test], runtime: false},
-      {:ex_unit_clustered_case, "~> 0.3", only: :test, runtime: false},
-      {:credo, "~> 1.1", only: [:dev, :test], runtime: false}
+      {:ex_doc, "~> 0.20", only: [:dev, :test], runtime: false},
+      {:ex_unit_clustered_case, "~> 0.4", only: :test, runtime: false},
+      {:credo, "~> 1.1", only: [:dev, :test], runtime: false},
+      {:husky, "~> 1.0", only: :dev, runtime: false}
     ]
   end
 
